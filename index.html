@@ -31,7 +31,9 @@
           <nav>
             <ul class="nav">
               <li>
-                <a class="nav__format nav__format-active" href="">Agencja</a>
+                <a class="nav__format nav__format-agency-active" href=""
+                  >Agencja</a
+                >
               </li>
               <li>
                 <a class="nav__format" href="portfolio.html">Portfolio</a>
@@ -65,7 +67,11 @@
             efektywne rozwiązania dla waszego biznesu
           </h1>
 
-          <button type="button" class="button button__order-text">
+          <button
+            type="button"
+            class="button button__order-text"
+            data-modal-open
+          >
             Zamów usługę
           </button>
         </div>
@@ -127,29 +133,36 @@
         <h2 class="main-business">Czym się zajmujemy</h2>
 
         <ul class="main-business-container">
-          <li>
+          <li class="main-business-container__img">
             <img
               alt="programer working in the office"
               width="370"
               height="294"
               src="images/img-our-service-1.jpg"
             />
+            <div class="main-business-container__text">
+              aplikacje komputerowe
+            </div>
           </li>
-          <li>
+          <li class="main-business-container__img">
             <img
               alt="designers are developing application on smartphones"
               width="370"
               height="294"
               src="images/img-our-service-2.jpg"
             />
+            <div class="main-business-container__text">aplikacje mobilne</div>
           </li>
-          <li>
+          <li class="main-business-container__img">
             <img
               alt="creative artist web working with colour selections on tablet"
               width="370"
               height="294"
               src="images/img-our-service-3.jpg"
             />
+            <div class="main-business-container__text">
+              rozwiązania graficzne
+            </div>
           </li>
         </ul>
       </section>
@@ -405,5 +418,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
