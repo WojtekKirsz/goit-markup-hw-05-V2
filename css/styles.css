@@ -463,10 +463,16 @@ body {
 
 .portfolio-box {
   border: 1px solid #eeeeee;
-  border-top: none;
+}
+
+.portfolio-box-item {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+}
+
+.portfolio-box:hover,
+.portfolio-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
